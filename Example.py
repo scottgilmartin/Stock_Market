@@ -1,4 +1,4 @@
-from Stock_Market import Stock, Trade, Market
+from Stock_Market import Stock, Market
 from datetime import datetime, timedelta
 import random
 
@@ -24,9 +24,8 @@ gin_buys = [market.market_trade(gin_stock, datetime.utcnow()-timedelta(minutes=r
 gin_sells = [market.market_trade(gin_stock, datetime.utcnow()-timedelta(minutes=random.randrange(20)),
                                  random.randrange(1000), 'sell', random.randrange(10,100)) for _ in range(5)]
 
-
-print(market.stocks)  # print stocks which have been traded in the market 
-print(market.latest_trades())  # print recent trades in the market
+for trade in market.latest_trades():
+    print(trade)  # print recent trades in the market
 
 for stock in market.stocks:
     print('Stock: ' + str(stock))
