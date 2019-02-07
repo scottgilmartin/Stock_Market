@@ -13,6 +13,6 @@ We are able to:
 
 
 <p align="center">
-Example readout</p>
+Example output</p>
 <p align="center">
 <img src="https://github.com/scottgilmartin/Stock_Market/blob/master/Images/Screen%20Shot%202019-02-07%20at%2008.55.22.png" alt="alt text" width="40%" height="40%"></p>
